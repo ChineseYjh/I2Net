@@ -1,0 +1,38 @@
+csv:
+  value: 'data.csv'
+n_class:
+  value: 1
+batch_size:
+  value: 16
+epochs:
+  value: 200
+learning_rate:
+  value: 1e-3
+optimizer:
+  value: torch.optim.Adam
+model:
+  value: GlasUNetI2Net
+encoder_model:
+  value: 'resnet18'
+patch_size:
+  value: (512, 512)
+aug_prob:
+  value: 0.5
+
+sync_bn:
+  value: False
+inner_planes:
+  value: 64
+no_aspp:
+  value: True
+ultra_pe:
+  value: False
+pos_dim:
+  value: 8
+
+K:
+  value: 6
+num_layer:
+  value: 1
+gate_layer:
+  value: 1
